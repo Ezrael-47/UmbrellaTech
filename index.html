@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UmbrellaTech | آمبرلاتک · آرمین</title>
+    <meta name="description" content="آرمین؛ فرانت‌اند، داده، الگوریتم، مشاوره و توسعه نرم‌افزار">
+
+    <!-- فونت‌ها -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- استایل اصلی -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== پس‌زمینه ماتریکسی ===== -->
+    <div class="grain"></div>
+    <canvas id="matrixRain"></canvas>
+    <div class="scanlines"></div>
+    <div class="scan-sweep"></div>
+    <div class="vignette"></div>
+    <div class="flicker"></div>
+
+    <!-- ===== هدر ===== -->
+    <header>
+        <div class="nav-wrap">
+            <div class="brand">
+                <img src="Logo1.png" alt="لوگوی UmbrellaTech" class="logo-img">
+                <span class="brand-name lat">Umbrella<span>Tech</span></span>
+            </div>
+            <button class="menu-btn" id="menuBtn" aria-label="باز کردن منو"></button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#about">درباره من</a></li>
+                    <li><a href="#services">تخصص‌ها</a></li>
+                    <li><a href="#projects">پروژه‌ها</a></li>
+                    <li><a href="#contact">تماس</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== محتوای اصلی ===== -->
+    <main id="home">
+        <!-- ===== بخش هیرو ===== -->
+        <section class="hero">
+            <div>
+                <span class="eyebrow lat" dir="ltr">UMBRELLA TECH // BY ARMIN</span>
+                <h1>توسعه، داده و الگوریتم،<br> زیر یک <em>چتر</em></h1>
+                <p class="lead">
+                    من آرمین هستم. فرانت‌اند، تحلیل داده، الگوریتم‌نویسی، پایگاه داده، مشاوره کامپیوتری و توسعه نرم‌افزار.
+                    هر آنچه برای یک پروژهٔ کامپیوتری نیاز دارید، زیر چتر UmbrellaTech قرار می‌گیرد.
+                </p>
+                <div class="terminal" id="terminal" aria-hidden="true"></div>
+                <div class="btn-row">
+                    <a href="#contact" class="btn btn-primary">درخواست مشاوره</a>
+                    <a href="#services" class="btn btn-ghost">مشاهده تخصص‌ها</a>
+                </div>
+            </div>
+            <div class="hero-emblem">
+                <div class="ring"></div>
+                <div class="ring r2"></div>
+                <svg class="biohazard" viewBox="0 0 100 100" aria-hidden="true">
+                    <g fill="none" stroke="currentColor" stroke-width="2.2">
+                        <circle cx="50" cy="50" r="6" />
+                        <circle cx="50" cy="28" r="12" />
+                        <circle cx="31" cy="61" r="12" />
+                        <circle cx="69" cy="61" r="12" />
+                        <path d="M50 40v-4M43 54l-3.4-2M60 54l3.4-2" />
+                    </g>
+                </svg>
+                <img src="Logo1.png" alt="لوگوی UmbrellaTech" class="logo-big">
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- ===== بخش درباره من ===== -->
+        <section id="about">
+            <div class="section-inner">
+                <div class="about-grid">
+                    <div data-reveal>
+                        <span class="tag">درباره من</span>
+                        <h2>آرمین؛ متخصص فرانت‌اند، داده و الگوریتم</h2>
+                        <p>
+                            من آرمین هستم. از همان روزهای اول، کدنویسی برایم بیش از یک شغل بود؛ یک سبک زندگی.
+                            مسلط به <strong>HTML، CSS، JavaScript</strong> و طراحی لندینگ‌های پیچیده و فرانت‌اند کامل.
+                            اما این پایان ماجرا نیست؛ به <strong>تحلیل داده و پایگاه‌های اطلاعاتی</strong> مسلطم و
+                            <strong>الگوریتم‌نویسی</strong> زبان دوم من است. <strong>نرم‌افزارهای ویندوزی</strong>،
+                            <strong>طراحی UI/UX</strong> و <strong>مشاوره کامپیوتری</strong> هم بخشی از تخصص‌های من هستند.
+                            هر پروژه‌ای که به کامپیوتر مربوط می‌شود، زیر چتر UmbrellaTech قرار می‌گیرد.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat"><b>+60</b><span>پروژهٔ تحویل‌شده</span></div>
+                            <div class="stat"><b>17</b><span>مدرک و گواهینامه</span></div>
+                            <div class="stat"><b>+85</b><span>مشتری راضی</span></div>
+                            <div class="stat"><b>1</b><span>توسعه‌دهنده، صفر واسطه</span></div>
+                        </div>
+                    </div>
+                    <div data-reveal>
+                        <span class="tag">چرا UmbrellaTech؟</span>
+                        <h2 style="font-size:22px;">معنی پشت نام UmbrellaTech</h2>
+                        <p>
+                            <strong style="color:var(--text)">UmbrellaTech</strong> = <strong style="color:var(--copper)">Umbrella</strong> (چتر) + <strong style="color:var(--copper)">Tech</strong> (تکنولوژی) = <strong style="color:var(--text)">چتر تکنولوژی</strong> (آمبرلاتک).<br><br>
+                            درست مثل یک چتر که در برابر باران از شما محافظت می‌کند، UmbrellaTech لایه‌ای از امنیت، کیفیت و پوشش کامل را دور پروژه‌های شما می‌کشد. کهربا در فرهنگ‌های مختلف نماد <strong style="color:var(--text)">حفاظت، ماندگاری و ارزش</strong> است و این همان چیزی است که من برای پروژه‌های شما به ارمغان می‌آورم.<br><br>
+                            <span style="color:var(--copper);">◆</span> <strong style="color:var(--text)">شفافیت:</strong> هر خط کد و هر تغییر برای شما قابل ردیابی است.<br>
+                            <span style="color:var(--copper);">◆</span> <strong style="color:var(--text)">چابکی:</strong> تحویل مرحله‌به‌مرحله، بدون غافلگیری در پایان پروژه.<br>
+                            <span style="color:var(--copper);">◆</span> <strong style="color:var(--text)">کیفیت:</strong> تمرکز بر تجربه کاربری، کارایی و بهینه‌سازی کدها.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- ===== بخش تخصص‌ها ===== -->
+        <section id="services">
+            <div class="section-inner">
+                <div class="section-head" data-reveal>
+                    <span class="tag">تخصص‌های من</span>
+                    <h2>ده حوزهٔ تخصصی</h2>
+                    <p>از خط اول کد تا مشاوره؛ هرچه نیاز دارید، زیر یک چتر.</p>
+                </div>
+                <div class="cards">
+                    <div class="card" data-idx="01" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9.5 12l1.8 1.8 3.2-3.6"/></svg>
+                        <h3>فرانت‌اند و لندینگ</h3>
+                        <p>طراحی و پیاده‌سازی لندینگ‌های پیچیده، سایت‌های شرکتی و فروشگاهی با HTML، CSS و JavaScript خالص.</p>
+                    </div>
+                    <div class="card" data-idx="02" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg>
+                        <h3>تحلیل داده</h3>
+                        <p>داشبوردهای تعاملی، گزارش‌گیری حرفه‌ای، مصورسازی داده و استخراج بینش از داده‌های خام.</p>
+                    </div>
+                    <div class="card" data-idx="03" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V6a2 2 0 012-2h8l6 6v9a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M14 4v6h6"/></svg>
+                        <h3>پایگاه داده</h3>
+                        <p>طراحی دیتابیس، بهینه‌سازی کوئری‌ها، مدیریت داده و یکپارچه‌سازی با سیستم‌های مختلف.</p>
+                    </div>
+                    <div class="card" data-idx="04" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 17a4 4 0 010-8 5 5 0 019.5-1.5A4 4 0 0118 17H6z"/></svg>
+                        <h3>الگوریتم‌نویسی</h3>
+                        <p>طراحی الگوریتم‌های کارآمد، حل مسائل پیچیده، بهینه‌سازی زمان و حافظه در کدها.</p>
+                    </div>
+                    <div class="card" data-idx="05" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                        <h3>UI/UX Design</h3>
+                        <p>طراحی رابط کاربری، تجربه کاربری، وایرفریم، پروتوتایپ و تست کاربری برای محصولات دیجیتال.</p>
+                    </div>
+                    <div class="card" data-idx="06" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        <h3>نرم‌افزار ویندوز</h3>
+                        <p>توسعهٔ اپلیکیشن‌های دسکتاپ، ابزارهای سیستمی و نرم‌افزارهای مدیریتی برای ویندوز.</p>
+                    </div>
+                    <div class="card" data-idx="07" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                        <h3>DevOps و استقرار</h3>
+                        <p>راه‌اندازی سرور، استقرار پروژه‌ها، مدیریت دامنه و هاست، خودکارسازی فرایندهای توسعه.</p>
+                    </div>
+                    <div class="card" data-idx="08" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 6v6l4 2"/></svg>
+                        <h3>تحلیل سیستم‌ها</h3>
+                        <p>بررسی معماری سیستم‌ها، تحلیل نیازمندی‌ها، ارزیابی کارایی و ارائه راهکارهای بهینه‌سازی.</p>
+                    </div>
+                    <div class="card" data-idx="09" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        <h3>مشاوره کامپیوتری</h3>
+                        <p>مشاوره شبکه، مشاوره امنیت (بدون اجرا)، مشاوره زیرساخت، انتخاب بهترین راهکار فنی و معماری.</p>
+                    </div>
+                    <div class="card" data-idx="10" data-reveal>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                        <h3>پشتیبانی و عیب‌یابی</h3>
+                        <p>رفع باگ، عیب‌یابی سیستم‌ها، بهینه‌سازی کد و پشتیبانی فنی پس از تحویل پروژه.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- ===== بخش پروژه‌ها ===== -->
+        <section id="projects">
+            <div class="section-inner">
+                <div class="section-head" data-reveal>
+                    <span class="tag">نمونه پروژه‌ها</span>
+                    <h2>پنج پروژهٔ اخیر</h2>
+                    <p>نمونه‌هایی از کارهایی که برای مشتریان یا به عنوان پروژه شخصی انجام شده است.</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-reveal>
+                        <div class="project-icon">Dental<span>Landing</span></div>
+                        <span class="project-badge">فرانت‌اند</span>
+                        <h3>لندینگ دندان‌پزشکی</h3>
+                        <p>لندینگ حرفه‌ای کلینیک دندان‌پزشکی با فرم رزرو نوبت، گالری خدمات و نظرات مشتریان.</p>
+                        <a href="https://ezrael-47.github.io/SmileCare-Dental-Landing/" target="_blank" class="project-link">مشاهده پروژه</a>
+                    </div>
+
+                    <div class="project-card" data-reveal>
+                        <div class="project-icon">Win<span>95</span></div>
+                        <span class="project-badge">UI/UX</span>
+                        <h3>Windows 95</h3>
+                        <p>بازسازی رابط کاربری ویندوز ۹۵ با دسکتاپ، پوشه‌ها و اپلیکیشن‌های کلاسیک.</p>
+                        <a href="https://ezrael-47.github.io/windows-95/" target="_blank" class="project-link">مشاهده پروژه</a>
+                    </div>
+
+                    <div class="project-card" data-reveal>
+                        <div class="project-icon">Palm<span>Pilot</span></div>
+                        <span class="project-badge">UI/UX</span>
+                        <h3>Palm Pilot</h3>
+                        <p>شبیه‌سازی دستگاه پالم‌پایلوت با نمایش اطلاعات و منوهای لمسی.</p>
+                        <a href="https://ezrael-47.github.io/palm-pilot/" target="_blank" class="project-link">مشاهده پروژه</a>
+                    </div>
+
+                    <div class="project-card" data-reveal>
+                        <div class="project-icon">Pomo<span>Timer</span></div>
+                        <span class="project-badge">JavaScript</span>
+                        <h3>Pomodoro Timer</h3>
+                        <p>تایمر مدیریت زمان با تکنیک پومودورو و لیست وظایف (Todo List).</p>
+                        <a href="https://ezrael-47.github.io/pomodoro-timer/" target="_blank" class="project-link">مشاهده پروژه</a>
+                    </div>
+
+                    <div class="project-card" data-reveal>
+                        <div class="project-icon">Resume<span>Builder</span></div>
+                        <span class="project-badge">ابزار</span>
+                        <h3>Persian Resume Builder</h3>
+                        <p>ابزار ساخت رزومه حرفه‌ای به فارسی با قالب‌های متنوع و امکان خروجی PDF.</p>
+                        <a href="https://ezrael-47.github.io/Persian-Resume-Builder/" target="_blank" class="project-link">مشاهده پروژه</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- ===== بخش تماس ===== -->
+        <section id="contact">
+            <div class="section-inner">
+                <div class="section-head" data-reveal>
+                    <span class="tag">تماس با من</span>
+                    <h2>بیایید هم‌کلام شویم</h2>
+                    <p>از طریق تماس، واتس‌اپ یا تلگرام در دسترس هستم. برای دیدار حضوری نیز به آدرس زیر مراجعه کنید.</p>
+                </div>
+
+                <div class="contact-wrap" data-reveal>
+                    <div class="contact-card">
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 3a2 2 0 01-.4 2.1L8 10.3a16 16 0 006 6l1.5-1.5a2 2 0 012.1-.4c1 .4 2 .6 3 .7a2 2 0 011.7 2z"/></svg>
+                        <div>
+                            <h4>شمارهٔ تماس ۱</h4>
+                            <a class="val lat" dir="ltr" href="tel:+989339782798">+98&nbsp;933&nbsp;978&nbsp;2798</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 3a2 2 0 01-.4 2.1L8 10.3a16 16 0 006 6l1.5-1.5a2 2 0 012.1-.4c1 .4 2 .6 3 .7a2 2 0 011.7 2z"/></svg>
+                        <div>
+                            <h4>شمارهٔ تماس ۲</h4>
+                            <a class="val lat" dir="ltr" href="tel:+989010679295">+98&nbsp;901&nbsp;067&nbsp;9295</a>
+                        </div>
+                    </div>
+
+                    <div class="addr-block">
+                        <div class="contact-card">
+                            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.1-7-11a7 7 0 0114 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                            <div>
+                                <h4>دفتر ایران</h4>
+                                <div class="val small">
+                                    زیتون کارمندی، خیابان بوعلی، بین زمزم و زیتون، پلاک ۷۱
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.1-7-11a7 7 0 0114 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                            <div>
+                                <h4>آدرس</h4>
+                                <div class="val small lat" dir="ltr" style="direction:ltr; text-align:left;">
+                                    Zeytoun Karmandi, Bouali St., between Zamzam and Zeytoun, No. 71
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== فوتر ===== -->
+    <footer>
+        <div class="footer-wrap">
+            <div class="foot-brand">
+                <img src="Logo1.png" alt="لوگوی UmbrellaTech" class="logo-img">
+                <span class="brand-name lat">Umbrella<span>Tech</span></span>
+            </div>
+            <div class="foot-links">
+                <a href="https://github.com/ezrael-47" target="_blank"><i class="fab fa-github"></i> گیت‌هاب</a>
+                <a href="https://t.me/Armin_471" target="_blank"><i class="fab fa-telegram"></i> تلگرام</a>
+            </div>
+        </div>
+        <p class="copyright">© <span id="year"></span> UmbrellaTech (آمبرلاتک) — چتر تکنولوژی برای پروژه‌های شما <span class="lat" dir="ltr" style="opacity:.7;">// developed by Armin</span></p>
+    </footer>
+
+    <!-- ===== دکمه پلی ===== -->
+    <button id="playBtn" class="music-btn" aria-label="پخش یا توقف">
+        <i class="fas fa-play"></i>
+    </button>
+    <audio id="audioPlayer" src="music.mp3" preload="auto"></audio>
+
+    <!-- ===== اسکریپت ===== -->
+    <script src="script.js"></script>
+</body>
+</html>
